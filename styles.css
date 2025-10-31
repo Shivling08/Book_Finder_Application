@@ -1,0 +1,85 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#60a5fa;
+  --glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%;}
+body{
+  margin:0;
+  font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:linear-gradient(180deg,#071029 0%, #071a2b 100%);
+  color:#e6eef6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.app{max-width:1100px;margin:24px auto;padding:24px}
+.header{margin-bottom:18px}
+.appNameBar{background:linear-gradient(90deg, rgba(96,165,250,0.08), rgba(255,255,255,0.02));padding:12px;border-radius:10px;margin-bottom:10px}
+.appName{display:flex;align-items:center;gap:12px}
+.logoSvg{width:52px;height:52px;flex:0 0 52px;border-radius:8px}
+.appName h1{margin:0;font-size:22px}
+.appTag{color:var(--muted);font-size:13px;margin-top:6px}
+.appNameBar{box-shadow:0 6px 18px rgba(2,6,23,0.45);}
+.subtitle{color:var(--muted);margin:12px 0 0}
+.topRow{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.nav{display:flex;gap:12px}
+.navItem{color:var(--muted);padding:6px 10px;border-radius:8px;text-decoration:none;cursor:pointer}
+.navItem.active{background:rgba(255,255,255,0.03);color:var(--accent);font-weight:600}
+.personaArea{margin-top:12px;display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap}
+.personaForm{display:flex;gap:8px;align-items:end;flex-wrap:wrap}
+.personaForm label{display:flex;flex-direction:column;min-width:150px}
+.pLabel{font-size:12px;color:var(--muted);margin-bottom:6px}
+.personaForm input{padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:var(--glass);color:inherit}
+.pActions{display:flex;gap:8px;align-items:center}
+.pActions button{padding:8px 10px;border-radius:8px;border:0;background:var(--accent);color:#04203a;cursor:pointer}
+.pActions button.muted{background:transparent;color:var(--muted);border:1px solid rgba(255,255,255,0.04)}
+.greeting{margin-top:8px;color:var(--muted);font-size:14px}
+.aboutGrid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:12px}
+.aboutCard{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)}
+.contactForm{display:flex;flex-direction:column;gap:8px}
+.contactForm .cfRow{display:flex;gap:8px}
+.contactForm label{display:flex;flex-direction:column}
+.contactForm input,.contactForm textarea{padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:var(--glass);color:inherit}
+.about .muted{color:var(--muted)}
+
+.browse h2{margin:0 0 8px}
+.trendingSection{margin-top:14px}
+.trendingTitle{margin:0 0 8px;font-size:15px}
+.trendingRow{display:flex;gap:10px;overflow:auto;padding-bottom:6px}
+.trendingItem{background:transparent;border:0;padding:0;cursor:pointer;min-width:220px}
+.trendingItem .card{min-width:220px}
+.search{margin-bottom:18px}
+.fields{display:flex;gap:12px;align-items:end;flex-wrap:wrap}
+.field{flex:1;min-width:180px}
+.field .label{display:block;color:var(--muted);font-size:12px;margin-bottom:6px}
+.field input{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:var(--glass);color:inherit}
+.actions{min-width:110px}
+.actions button{width:100%;padding:10px;border-radius:8px;border:0;background:var(--accent);color:#04203a;font-weight:600;cursor:pointer}
+.actions button:disabled{opacity:0.6}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.card{display:flex;gap:12px;padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)}
+.cover{width:92px;height:128px;object-fit:cover;border-radius:6px}
+.noCover{width:92px;height:128px;border-radius:6px;background:#0b1b2b;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px}
+.meta{flex:1}
+.bookTitle{margin:0;font-size:15px}
+.bookAuthors{color:var(--muted);font-size:13px;margin-top:6px}
+.bookYear{font-size:12px;color:var(--muted);margin-top:6px}
+.bookExtras{font-size:12px;color:var(--muted);margin-top:6px}
+.openLink{display:inline-block;margin-top:8px;color:var(--accent);text-decoration:none}
+.info{padding:12px;color:var(--muted)}
+.error{padding:12px;color:#ffb4b4;background:rgba(255,64,64,0.06);border-radius:8px}
+.pager{display:flex;gap:12px;align-items:center;justify-content:center;margin-top:18px}
+.footer{margin-top:28px;color:var(--muted);text-align:center}
+.siteFooter{border-top:1px solid rgba(255,255,255,0.03);margin-top:28px;padding-top:14px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.footerLinks a{color:var(--muted);text-decoration:none;margin-left:8px}
+.devCredit{color:var(--muted);font-size:13px}
+@media (max-width:520px){
+  .fields{flex-direction:column}
+  .actions{width:100%}
+  .card{flex-direction:column;align-items:center}
+  .meta{text-align:center}
+  .aboutGrid{grid-template-columns:1fr}
+}
